@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    esmExternals: "loose",
-  },
-};
+  reactStrictMode: true,
+  // ⚠️ 不要加 runtime: 'edge'
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig
